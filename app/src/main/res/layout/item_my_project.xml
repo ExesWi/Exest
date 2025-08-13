@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#FFFFFF"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Изображение проекта -->
+        <ImageView
+            android:id="@+id/projectImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="#F0F0F0"
+            android:src="@drawable/ic_feed"
+            android:alpha="0.7"/>
+
+        <!-- Контент -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Заголовок -->
+            <TextView
+                android:id="@+id/projectTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Название проекта"
+                android:textSize="18sp"
+                android:textColor="#232323"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+
+            <!-- Описание -->
+            <TextView
+                android:id="@+id/projectDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Описание проекта"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="12dp"
+                android:maxLines="3"
+                android:ellipsize="end"/>
+
+            <!-- Метаданные -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Тип проекта -->
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/projectType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Тип"
+                    android:textSize="12sp"
+                    app:chipBackgroundColor="#E3F2FD"
+                    android:textColor="#1976D2"
+                    app:chipMinHeight="24dp"/>
+
+                <!-- Статус проекта -->
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/projectStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Статус"
+                    android:textSize="12sp"
+                    app:chipBackgroundColor="#FFF3E0"
+                    android:textColor="#F57C00"
+                    app:chipMinHeight="24dp"
+                    android:layout_marginStart="8dp"/>
+
+                <!-- Дата создания -->
+                <TextView
+                    android:id="@+id/projectDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="24.07.2025"
+                    android:textSize="12sp"
+                    android:textColor="#888888"
+                    android:gravity="end"/>
+
+            </LinearLayout>
+
+            <!-- Кнопка результата -->
+            <Button
+                android:id="@+id/resultButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Перейти на сайт"
+                android:textSize="12sp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView> 

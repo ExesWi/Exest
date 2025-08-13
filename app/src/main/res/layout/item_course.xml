@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:strokeColor="#E0E0E0"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/course_card_background"
+        android:padding="20dp"
+        android:paddingTop="20dp">
+
+        <!-- Название курса -->
+        <TextView
+            android:id="@+id/courseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Developer"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#425675"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Описание курса -->
+        <TextView
+            android:id="@+id/courseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Станьте профессиональным мобильным разработчиком. Изучите современные технологии и создавайте приложения для iOS и Android."
+            android:textSize="14sp"
+            android:textColor="#697E91"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Особенности курса -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <!-- Особенность 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_check"
+                    android:background="@drawable/feature_icon_background"
+                    android:padding="3dp"
+                    android:layout_marginEnd="12dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="50+ практических уроков"
+                    android:textSize="14sp"
+                    android:textColor="#425275"
+                    android:fontFamily="sans-serif"/>
+
+            </LinearLayout>
+
+            <!-- Особенность 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_check"
+                    android:background="@drawable/feature_icon_background"
+                    android:padding="3dp"
+                    android:layout_marginEnd="12dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Сертификат по окончании"
+                    android:textSize="14sp"
+                    android:textColor="#425275"
+                    android:fontFamily="sans-serif"/>
+
+            </LinearLayout>
+
+            <!-- Особенность 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_check"
+                    android:background="@drawable/feature_icon_background"
+                    android:padding="3dp"
+                    android:layout_marginEnd="12dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Поддержка сообщества"
+                    android:textSize="14sp"
+                    android:textColor="#425275"
+                    android:fontFamily="sans-serif"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Кнопка "Перейти" -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/courseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Перейти"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            app:cornerRadius="8dp"
+            android:backgroundTint="#6558D3"
+            android:elevation="4dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView> 

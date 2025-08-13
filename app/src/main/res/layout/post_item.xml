@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="18dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/postAvatar"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@android:drawable/sym_def_app_icon"
+                app:civ_border_color="@android:color/darker_gray"
+                app:civ_border_width="1dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/postUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/postTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#идея"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"
+                android:background="@android:color/transparent"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:letterSpacing="0.05"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/postTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Заголовок поста"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/postDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Описание поста"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/postAdvantages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Преимущества"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="italic"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/postPrepared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Что подготовлено"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="italic"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/postProjectStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Статус проекта"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="italic"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/postInvite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Приглашение в команду"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/postDocument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Документ"
+            android:textColor="@android:color/holo_purple"
+            android:textStyle="italic"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/postImagesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="false"
+            android:minHeight="0dp"/>
+
+        <LinearLayout
+            android:id="@+id/reactionsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:id="@+id/reactionLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👍 0"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:letterSpacing="0.03"/>
+            <TextView
+                android:id="@+id/reactionFire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔥 0"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:letterSpacing="0.03"/>
+            <TextView
+                android:id="@+id/reactionWow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="😮 0"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:letterSpacing="0.03"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/commentsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Комментарии (0)"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/postTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12.06.2024 12:00"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView> 

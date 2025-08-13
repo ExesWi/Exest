@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="grey">#E0E0E0</color>
+    <color name="red_500">#F44336</color>
+    
+    <!-- Цвета для BottomNavigationMenu -->
+    <color name="nav_active">#232323</color>
+    <color name="nav_inactive">#888888</color>
+    <color name="nav_background">#FFFFFF</color>
+    <color name="nav_border">#E0E0E0</color>
+    <color name="nav_ripple">#1A1A1A</color>
+    
+    <!-- Цвета для кнопок авторизации -->
+    <color name="button_primary">#667eea</color>
+    <color name="button_secondary">#F5F5F5</color>
+    <color name="text_link">#667eea</color>
+    
+    <!-- Цвета для анимаций -->
+    <color name="primary_dark">#1A1A1A</color>
+    <color name="surface_light">#F8F9FA</color>
+    <color name="background_light">#F5F5F7</color>
+    
+</resources>
